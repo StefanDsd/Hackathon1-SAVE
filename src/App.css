@@ -30,3 +30,7 @@
   background: none;
   border: none;
 }
+.modal img {
+  width: 80%;
+  height: auto;
+}

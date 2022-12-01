@@ -13,8 +13,7 @@ function Modal({ imgLink, children, city, onClick }) {
         className="open-btn"
         onClick={() => setIsOpen(true)}
         onChange={(e) => buttonClicked(e)}>
-        {" "}
-        open{" "}
+        Find out more!
       </button>
     );
   return (
@@ -25,7 +24,15 @@ function Modal({ imgLink, children, city, onClick }) {
           close{" "}
         </button>
 
-        <img src={imgLink} alt="city" className="modal-image" />
+        <img
+          src={
+            imgLink
+              ? imgLink
+              : "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+          }
+          alt="city"
+          className="modal-image"
+        />
         <h3 className="modal-title">{city}</h3>
         {children}
       </div>

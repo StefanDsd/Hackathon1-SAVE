@@ -42,7 +42,8 @@ video {
   justify-content: space-between;
 }
 .button-more {
-  background-color: #2f807e;
+  color: whitesmoke;
+  background-color: #3a9a98;
   border-radius: 5px;
   width: 5em;
 }

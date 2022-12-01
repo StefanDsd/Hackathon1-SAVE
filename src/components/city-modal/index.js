@@ -1,18 +1,13 @@
 import React, { useState } from "react";
 import "./app.css";
+import ModalDetails from "../modal-details";
 
 function Modal({ imgLink, children, city, onClick }) {
   const [isOpen, setIsOpen] = useState(false);
-  const buttonClicked = (e) => {
-    e.stopPropagation();
-  };
 
   if (!isOpen)
     return (
-      <button
-        className="open-btn"
-        onClick={() => setIsOpen(true)}
-        onChange={(e) => buttonClicked(e)}>
+      <button className="open-btn" onClick={() => setIsOpen(true)}>
         Find out more!
       </button>
     );
@@ -20,8 +15,7 @@ function Modal({ imgLink, children, city, onClick }) {
     <div className="overlay" onClick={() => setIsOpen(false)}>
       <div className="modal">
         <button className="close-btn" onClick={() => setIsOpen(false)}>
-          {" "}
-          close{" "}
+          close
         </button>
 
         <img
@@ -33,8 +27,8 @@ function Modal({ imgLink, children, city, onClick }) {
           alt="city"
           className="modal-image"
         />
-        <h3 className="modal-title">{city}</h3>
-        {children}
+        <h3 className="modal-title">{city ? city : "City1"}</h3>
+        <ModalDetails />
       </div>
     </div>
   );

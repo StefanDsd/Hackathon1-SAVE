@@ -1,0 +1,31 @@
+header {
+  display: flex;
+}
+.navBar a {
+  text-decoration: none;
+}
+
+.navBar {
+  background-color: rgb(117, 117, 210);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  text-decoration: none;
+}
+
+.navBar li {
+  color: white;
+}
+
+.navBar li:hover {
+  color: black;
+  transition: 0.7s;
+}

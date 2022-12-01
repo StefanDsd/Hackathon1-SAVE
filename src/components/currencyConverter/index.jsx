@@ -22,7 +22,8 @@ export default function CurrencyConverter() {
   useEffect(() => {
     fetch(symbolsUrl, requestOptions)
       .then((resp) => resp.json())
-      .then((data) => setResponse(Object.keys(data.symbols)));
+      .then((data) => setResponse(Object.keys(data.symbols)))
+      .catch(err => console.log(err));
   }, []);
 
   const handleCurrencyFetch = async () => {

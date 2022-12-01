@@ -13,31 +13,26 @@ video {
   height: 60vh;
   object-fit: cover;
 }
+.save-title {
+  display: flex;
+  justify-content: center;
+}
 .title {
   display: flex;
   justify-content: center;
 }
 
 .city1 {
-  background-color: blanchedalmond;
+  background-color: whitesmoke;
   height: 40vh;
   margin: 20px;
-  display: flex;
-  justify-content: center;
+  
 }
 
-.city2 {
-  background-color: yellowgreen;
-  height: 40vh;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
+.yt-video {
+    width: 40vh;
+    height: 30vh;
+    border-radius: 20px;
+    padding: 1vh;
 }
 
-.city3 {
-  background-color: aquamarine;
-  height: 40vh;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-}

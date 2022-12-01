@@ -1,4 +1,5 @@
 import React from "react";
+
 import Modal from "../city-modal/index";
 
 function City({ citytitle, videosrc }) {
@@ -22,5 +23,6 @@ function City({ citytitle, videosrc }) {
     </div>
   );
 }
+
 
 export default City;

@@ -1,5 +1,7 @@
+import Home from "./pages/Home";
 import "./App.css";
-import Modal from "./components/city-modal";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Modal } from "react";
 import { city } from "./tips-data";
 
 function App() {
@@ -22,6 +24,11 @@ function App() {
           </>
         ))}
       </Modal>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -16,17 +16,35 @@ video {
 .save-title {
   display: flex;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: whitesmoke;
+  background-color: #2f807e;
+  border-radius: 10px;
+
 }
 .title {
   display: flex;
   justify-content: center;
 }
 
-.city1 {
+.city {
   background-color: whitesmoke;
   height: 40vh;
   margin: 20px;
   
+}
+
+.title-button-container {
+  display: flex;
+  column-gap: 1em;
+  padding: .5em;
+  justify-content: space-between;
+}
+.button-more {
+  background-color: #2f807e;
+  border-radius: 5px;
+  width: 5em;
 }
 
 .yt-video {

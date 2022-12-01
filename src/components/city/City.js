@@ -7,9 +7,9 @@ function City({ citytitle, videosrc }) {
     <div className="city">
       <div className="title-button-container">
         <h2 className="title">{citytitle}</h2>
-        <button className="button-more">
+        <div className="button-more">
           <Modal />
-        </button>
+        </div>
       </div>
       <iframe
         className="yt-video"
@@ -23,6 +23,5 @@ function City({ citytitle, videosrc }) {
     </div>
   );
 }
-
 
 export default City;

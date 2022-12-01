@@ -21,7 +21,6 @@ video {
   color: whitesmoke;
   background-color: #2f807e;
   border-radius: 10px;
-
 }
 .title {
   display: flex;
@@ -32,26 +31,28 @@ video {
   background-color: whitesmoke;
   height: 40vh;
   margin: 20px;
-  
 }
 
 .title-button-container {
   display: flex;
   column-gap: 1em;
-  padding: .5em;
+  padding: 0.5em;
   justify-content: space-between;
 }
 .button-more {
   color: whitesmoke;
   background-color: #3a9a98;
   border-radius: 5px;
-  width: 5em;
+  width: 7em;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .yt-video {
-    width: 40vh;
-    height: 30vh;
-    border-radius: 20px;
-    padding: 1vh;
+  width: 40vh;
+  height: 30vh;
+  border-radius: 20px;
+  padding: 1vh;
 }
-

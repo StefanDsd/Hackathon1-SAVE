@@ -14,10 +14,6 @@ function Modal({ imgLink, children, city, onClick }) {
   return (
     <div className="overlay" onClick={() => setIsOpen(false)}>
       <div className="modal">
-        <button className="close-btn" onClick={() => setIsOpen(false)}>
-          close
-        </button>
-
         <img
           src={
             imgLink
@@ -28,6 +24,9 @@ function Modal({ imgLink, children, city, onClick }) {
           className="modal-image"
         />
         <h3 className="modal-title">{city ? city : "City1"}</h3>
+        <button className="close-btn" onClick={() => setIsOpen(false)}>
+          close
+        </button>
         <ModalDetails />
       </div>
     </div>

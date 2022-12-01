@@ -3,10 +3,16 @@ import "./app.css";
 
 function Modal({ imgLink, children, city, onClick }) {
   const [isOpen, setIsOpen] = useState(false);
+  const buttonClicked = (e) => {
+    e.stopPropagation();
+  };
 
   if (!isOpen)
     return (
-      <button className="open-btn" onClick={() => setIsOpen(true)}>
+      <button
+        className="open-btn"
+        onClick={() => setIsOpen(true)}
+        onChange={(e) => buttonClicked(e)}>
         {" "}
         open{" "}
       </button>

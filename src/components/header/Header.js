@@ -20,7 +20,7 @@ const Header = () => {
       <div className="burger-icon">
         <Popup
           modal
-          overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+          overlayStyle={{ background: "rgba(255,255,255,0.85" }}
           contentStyle={contentStyle}
           closeOnDocumentClick={false}
           trigger={(open) => <BurgerMenuIcon open={open} />}

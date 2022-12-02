@@ -12,11 +12,6 @@ export default function BurgerMenuList({ close }) {
           </NavLink>
         </li>
         <li>
-          <NavLink onClick={close} activeclassName="current" to="City">
-            City
-          </NavLink>
-        </li>
-        <li>
           <NavLink onClick={close} activeclassName="current" to="Currency">
             Currency
           </NavLink>

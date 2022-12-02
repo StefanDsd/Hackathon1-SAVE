@@ -1,7 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import homeVideo from "../assets/homeVideo.mp4";
 import "./Home.css";
-import City from "../components/city/City";
+
+import City from "../components/city/City"
+import CurrencyConverter from "../components/currencyConverter";
 
 const Home = () => {
   const video = useRef(null);
@@ -23,13 +25,17 @@ const Home = () => {
             autoPlay
             loop
             muted
+            
           />
           <div className="save-title">
             <h1>What is SAVE ?</h1>
           </div>
         </div>
       </section>
-      <City
+
+       {/* <CurrencyConverter /> */}
+        <City
+
         citytitle={"Berlin"}
         videosrc={"https://www.youtube.com/embed/hVfBQNENS9s?start=22"}
       />

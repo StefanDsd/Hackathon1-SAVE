@@ -62,6 +62,13 @@ video {
     justify-content: center;
     align-items: center;
   }
+  .footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: darkcyan;
+  }
 
   .yt-video {
     width: 40vh;
@@ -143,7 +150,18 @@ video {
     background-color: #2f807e;
     border-radius: 10px;
   }
+
+  .footer-title {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: darkcyan;
+  }
   .title {
+    color: grey;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content: center;
   }
@@ -152,19 +170,26 @@ video {
     background-color: whitesmoke;
     height: 60vh;
     margin: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   .title-button-container {
     display: flex;
+    font-size: 5rem;
     column-gap: 1em;
     padding: 0.5em;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .button-more {
     color: whitesmoke;
     background-color: #3a9a98;
     border-radius: 5px;
     width: 7em;
+    height: 1em;
     border: none;
     display: flex;
     justify-content: center;

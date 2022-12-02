@@ -25,16 +25,15 @@ video {
   }
 }
 
-
 @media screen and (max-width: 940px) {
   .save-title {
     display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    font-size: 12px;
     color: whitesmoke;
     background-color: #2f807e;
-    border-radius: 10px;
   }
   .title {
     display: flex;
@@ -87,9 +86,7 @@ video {
   }
 }
 
-
-
-@media screen and (min-width: 940px){
+@media screen and (min-width: 940px) {
   .save-title {
     display: flex;
     justify-content: center;
@@ -97,19 +94,18 @@ video {
     font-size: 26px;
     color: whitesmoke;
     background-color: #2f807e;
-    border-radius: 10px;
   }
   .title {
     display: flex;
     justify-content: center;
   }
-  
+
   .city {
     background-color: whitesmoke;
     height: 60vh;
     margin: 20px;
   }
-  
+
   .title-button-container {
     display: flex;
     column-gap: 1em;
@@ -126,7 +122,7 @@ video {
     justify-content: center;
     align-items: center;
   }
-  
+
   .yt-video {
     width: 90vh;
     height: 50vh;
@@ -134,6 +130,4 @@ video {
     padding: 2vh;
     padding-left: 10vh;
   }
-
 }
-

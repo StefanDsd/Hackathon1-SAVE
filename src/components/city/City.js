@@ -1,15 +1,11 @@
 import React from "react";
 
-import Modal from "../city-modal/index";
-
-function City({ citytitle, videosrc }) {
+function City({ citytitle, modal, videosrc }) {
   return (
     <div className="city">
       <div className="title-button-container">
         <h2 className="title">{citytitle}</h2>
-        <div className="button-more">
-          <Modal />
-        </div>
+        <div className="button-more">{modal}</div>
       </div>
       <iframe
         className="yt-video"

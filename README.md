@@ -7,4 +7,11 @@
 * Stefan Ivanus
 
 ## NPM packages
+* react-router-dom
+* react-dom
+* react-scripts
+* reactjs-popup
+
+
+
 

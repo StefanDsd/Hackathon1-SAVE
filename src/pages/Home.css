@@ -13,6 +13,7 @@ video {
   height: 60vh;
   object-fit: cover;
 }
+
 @media (min-width: 1250px) {
   .logoMobile img {
     display: none;
@@ -23,6 +24,7 @@ video {
     display: none;
   }
 }
+
 
 @media screen and (max-width: 940px) {
   .save-title {

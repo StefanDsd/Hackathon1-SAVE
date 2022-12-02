@@ -4,7 +4,6 @@ import "./Home.css";
 import logo2 from "../assets/logo2.png";
 
 import City from "../components/city/City";
-import CurrencyConverter from "../components/currencyConverter";
 
 const Home = () => {
   const video = useRef(null);
@@ -33,7 +32,7 @@ const Home = () => {
             muted
           />
           <div className="save-title">
-            <h1>What is SAVE ?</h1>
+            <h1>What is $AV€ ?</h1>
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import homeVideo from "../assets/homeVideo.mp4";
 import "./Home.css";
-import City from "../components/city/City"
+import City from "../components/city/City";
 
 const Home = () => {
   const video = useRef(null);
@@ -29,21 +29,20 @@ const Home = () => {
           </div>
         </div>
       </section>
-        <City
+      <City
         citytitle={"Berlin"}
-        videosrc={"https://www.youtube.com/embed/hVfBQNENS9s?start=22"} />
-        
-        <City 
+        videosrc={"https://www.youtube.com/embed/hVfBQNENS9s?start=22"}
+      />
+
+      <City
         citytitle={"Paris"}
         videosrc={"https://www.youtube.com/embed/oz45k8EYblk?start=10"}
-        />
+      />
 
-        <City 
+      <City
         citytitle={"Amsterdam"}
         videosrc={"https://www.youtube.com/embed/YaAwSaMYDyU?start=9"}
-        />
-
-
+      />
     </div>
   );
 };

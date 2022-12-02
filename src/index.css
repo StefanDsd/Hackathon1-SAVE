@@ -6,7 +6,7 @@ header {
 }
 
 .navBar {
-  background-color: rgb(117, 117, 210);
+  background-color: rgb(188, 188, 255);
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -28,4 +28,7 @@ header {
 .navBar li:hover {
   color: black;
   transition: 0.7s;
+}
+.navBar img {
+  width: 4rem;
 }

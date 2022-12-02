@@ -13,6 +13,10 @@ video {
   height: 60vh;
   object-fit: cover;
 }
+
+@media screen and (max-width: 940px){
+  
+
 .save-title {
   display: flex;
   justify-content: center;
@@ -57,3 +61,5 @@ video {
   border-radius: 20px;
   padding: 1vh;
 }
+}
+

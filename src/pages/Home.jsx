@@ -1,17 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import homeVideo from "../assets/homeVideo.mp4";
 import "./Home.css";
-<<<<<<< HEAD
 import City from "../components/city/City";
-import CurrencyConverter from "../components/currencyConverter";
 import Modal from "../components/city-modal";
-import ModalDetails from "../components/modal-details";
-import { city } from "../tips-data";
-=======
+import { berlin } from "../tips-data";
 import logo2 from "../assets/logo2.png";
-
-import City from "../components/city/City";
->>>>>>> 5c52ea1693b4f70a88390707e261593f20a6a60a
+import Berlin from "../assets/Berlin.jpg";
 
 const Home = () => {
   const video = useRef(null);
@@ -44,32 +38,24 @@ const Home = () => {
           </div>
         </div>
       </section>
-<<<<<<< HEAD
-      {/* <CurrencyConverter /> */}
       <div>
-        <Modal>
-          {city.map((e) => {
-            return (
-              <ul>
-                <h3>{e.tipTitle}</h3>
-                <li>{e.tip}</li>
-              </ul>
-            );
-          })}
-        </Modal>
         <City
           citytitle={"Berlin"}
           videosrc={"https://www.youtube.com/embed/hVfBQNENS9s?start=22"}
+          modal={
+            <Modal imgLink={Berlin} city={"Berlin"}>
+              {berlin.map((e) => {
+                return (
+                  <ul>
+                    <h3>{e.tipTitle}</h3>
+                    <li>{e.tip}</li>
+                  </ul>
+                );
+              })}
+            </Modal>
+          }
         />
       </div>
-=======
-
-      {/* <CurrencyConverter /> */}
-      <City
-        citytitle={"Berlin"}
-        videosrc={"https://www.youtube.com/embed/hVfBQNENS9s?start=22"}
-      />
->>>>>>> 5c52ea1693b4f70a88390707e261593f20a6a60a
 
       <City
         citytitle={"Paris"}

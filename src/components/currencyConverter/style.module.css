@@ -5,10 +5,19 @@
   padding-bottom: 20rem;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  border: 2px solid #3a9a98;
+  border-radius: 1rem;
+  margin: auto 0.5rem;
+  padding: 0.5rem;
 }
 
 .select_container {
@@ -16,6 +25,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
+  margin: 2rem auto;
 }
 
 .input_container {
@@ -26,4 +36,23 @@
   column-gap: 1em;
   width: 50%;
   flex-wrap: wrap;
+  margin-top: 0.5rem;
+
+  margin: 2rem auto;
+}
+
+.convert_button {
+  margin-top: 0.5rem;
+}
+
+.result_container {
+  background-color: #3a9a98;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding: 10px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

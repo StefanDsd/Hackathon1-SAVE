@@ -32,7 +32,12 @@ const Home = () => {
             muted
           />
           <div className="save-title">
-            <h1>What is $AV€ ?</h1>
+            <h1>Want to TRAVEL?</h1>
+            <br />
+            <h1>Want to TRAVEL CHEAP ?</h1>
+            <br />
+            <h1>Choose $AV€!</h1>
+            <br />
           </div>
         </div>
       </section>

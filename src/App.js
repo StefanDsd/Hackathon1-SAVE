@@ -16,7 +16,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/City" element={<City />} />
-          <Route path="/About Us" element={<AboutUs />} />
           <Route path="/Currency" element={<CurrencyConverter />} />
         </Routes>
       </BrowserRouter>

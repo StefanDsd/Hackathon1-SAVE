@@ -34,3 +34,28 @@ header {
   width: 5rem;
   filter: invert(100%);
 }
+.logoMobile img {
+  width: 7rem;
+  display: block;
+  z-index: 9999;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+
+  filter: invert(100%);
+}
+@media (min-width: 801px) {
+  .logoMobile img {
+    display: none;
+  }
+}
+@media (min-width: 1250px) {
+  .logoMobile img {
+    display: none;
+  }
+}
+@media (min-width: 801px) {
+  .logoMobile img {
+    display: none;
+  }
+}

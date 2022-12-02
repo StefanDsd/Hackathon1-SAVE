@@ -25,7 +25,6 @@ video {
   color: whitesmoke;
   background-color: #2f807e;
   border-radius: 10px;
-
 }
 .title {
   display: flex;
@@ -61,5 +60,22 @@ video {
   border-radius: 20px;
   padding: 1vh;
 }
+.logoMobile img {
+  width: 7rem;
+  display: block;
+  z-index: 9999;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+
+  filter: invert(100%);
 }
+@media (min-width: 801px) {
+  .logoMobile img {
+    display: none;
+  }
+}
+=======
+}
+
 

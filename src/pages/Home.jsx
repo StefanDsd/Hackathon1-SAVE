@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import homeVideo from "../assets/homeVideo.mp4";
 import "./Home.css";
+import logo2 from "../assets/logo2.png";
 
-import City from "../components/city/City"
+import City from "../components/city/City";
 import CurrencyConverter from "../components/currencyConverter";
 
 const Home = () => {
@@ -15,6 +16,11 @@ const Home = () => {
 
   return (
     <div className="body">
+      <div className="logoMobile">
+        <i>
+          <img src={logo2} alt="logo" />
+        </i>
+      </div>
       <section>
         <div className="home">
           <video
@@ -25,7 +31,6 @@ const Home = () => {
             autoPlay
             loop
             muted
-            
           />
           <div className="save-title">
             <h1>What is SAVE ?</h1>
@@ -33,9 +38,8 @@ const Home = () => {
         </div>
       </section>
 
-       {/* <CurrencyConverter /> */}
-        <City
-
+      {/* <CurrencyConverter /> */}
+      <City
         citytitle={"Berlin"}
         videosrc={"https://www.youtube.com/embed/hVfBQNENS9s?start=22"}
       />

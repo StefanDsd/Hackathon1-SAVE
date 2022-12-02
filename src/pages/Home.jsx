@@ -1,11 +1,17 @@
 import React, { useRef, useEffect } from "react";
 import homeVideo from "../assets/homeVideo.mp4";
 import "./Home.css";
+<<<<<<< HEAD
 import City from "../components/city/City";
 import CurrencyConverter from "../components/currencyConverter";
 import Modal from "../components/city-modal";
 import ModalDetails from "../components/modal-details";
 import { city } from "../tips-data";
+=======
+import logo2 from "../assets/logo2.png";
+
+import City from "../components/city/City";
+>>>>>>> 5c52ea1693b4f70a88390707e261593f20a6a60a
 
 const Home = () => {
   const video = useRef(null);
@@ -17,6 +23,11 @@ const Home = () => {
 
   return (
     <div className="body">
+      <div className="logoMobile">
+        <i>
+          <img src={logo2} alt="logo" />
+        </i>
+      </div>
       <section>
         <div className="home">
           <video
@@ -29,10 +40,11 @@ const Home = () => {
             muted
           />
           <div className="save-title">
-            <h1>What is SAVE ?</h1>
+            <h1>What is $AV€ ?</h1>
           </div>
         </div>
       </section>
+<<<<<<< HEAD
       {/* <CurrencyConverter /> */}
       <div>
         <Modal>
@@ -50,6 +62,14 @@ const Home = () => {
           videosrc={"https://www.youtube.com/embed/hVfBQNENS9s?start=22"}
         />
       </div>
+=======
+
+      {/* <CurrencyConverter /> */}
+      <City
+        citytitle={"Berlin"}
+        videosrc={"https://www.youtube.com/embed/hVfBQNENS9s?start=22"}
+      />
+>>>>>>> 5c52ea1693b4f70a88390707e261593f20a6a60a
 
       <City
         citytitle={"Paris"}

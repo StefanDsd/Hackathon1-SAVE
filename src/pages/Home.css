@@ -14,65 +14,76 @@ video {
   object-fit: cover;
 }
 
-@media screen and (max-width: 940px){
-  
-
-.save-title {
-  display: flex;
-  justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: whitesmoke;
-  background-color: #2f807e;
-  border-radius: 10px;
-}
-.title {
-  display: flex;
-  justify-content: center;
-}
-
-.city {
-  background-color: whitesmoke;
-  height: 40vh;
-  margin: 20px;
-}
-
-.title-button-container {
-  display: flex;
-  column-gap: 1em;
-  padding: 0.5em;
-  justify-content: space-between;
-}
-.button-more {
-  color: whitesmoke;
-  background-color: #3a9a98;
-  border-radius: 5px;
-  width: 7em;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.yt-video {
-  width: 40vh;
-  height: 30vh;
-  border-radius: 20px;
-  padding: 1vh;
-}
-.logoMobile img {
-  width: 7rem;
-  display: block;
-  z-index: 9999;
-  position: absolute;
-  left: 20px;
-  top: 30px;
-
-  filter: invert(100%);
+@media (min-width: 1250px) {
+  .logoMobile img {
+    display: none;
+  }
 }
 @media (min-width: 801px) {
   .logoMobile img {
     display: none;
+  }
+}
+
+
+@media screen and (max-width: 940px) {
+  .save-title {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: #2f807e;
+    border-radius: 10px;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .city {
+    background-color: whitesmoke;
+    height: 40vh;
+    margin: 20px;
+  }
+
+  .title-button-container {
+    display: flex;
+    column-gap: 1em;
+    padding: 0.5em;
+    justify-content: space-between;
+  }
+  .button-more {
+    color: whitesmoke;
+    background-color: #3a9a98;
+    border-radius: 5px;
+    width: 7em;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .yt-video {
+    width: 40vh;
+    height: 30vh;
+    border-radius: 20px;
+    padding: 1vh;
+  }
+  .logoMobile img {
+    width: 7rem;
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+
+    filter: invert(100%);
+  }
+  @media (min-width: 801px) {
+    .logoMobile img {
+      display: none;
+    }
   }
 }
 

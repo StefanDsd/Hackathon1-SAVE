@@ -10,10 +10,19 @@
   padding-top: 50px;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  border: 2px solid #3a9a98;
+  border-radius: 1rem;
+  margin: auto 0.5rem;
+  padding: 0.5rem;
 }
 
 .select_container {
@@ -21,12 +30,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
+  margin: 2rem auto;
 }
 
-.input_container {
-  width: 150px;
-  height: 30px;
-  font-size: 20px;
-  margin: 5px auto;
-  outline: 0;
-}
+

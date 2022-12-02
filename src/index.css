@@ -3,13 +3,14 @@ header {
 }
 .navBar a {
   text-decoration: none;
+  font-size: large;
 }
 
 .navBar {
-  background-color: rgb(117, 117, 210);
+  background-color: #3a9a98;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.6rem;
   width: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
@@ -28,4 +29,8 @@ header {
 .navBar li:hover {
   color: black;
   transition: 0.7s;
+}
+.navBar img {
+  width: 5rem;
+  filter: invert(100%);
 }

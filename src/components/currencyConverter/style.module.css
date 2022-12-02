@@ -1,7 +1,7 @@
 .big_container {
   text-align: center;
   font-family: sans-serif;
-  background-color: #00539cff;
+  background-color: #3a9a9874;
   display: flex;
   height: 80vh;
   align-items: center;
@@ -13,6 +13,8 @@
 .title {
   display: flex;
   justify-content: center;
+  color: rgba(0, 0, 0, 0.703);
+  padding: 2rem
 }
 
 .container {

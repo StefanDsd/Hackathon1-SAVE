@@ -7,7 +7,7 @@ import Header from "./components/header/Header";
 import AboutUs from "./pages/AboutUs";
 import Footer from "./components/footer/Footer";
 import CurrencyConverter from "./components/currencyConverter";
-import Destinations from "./components/destinations/Destinations";
+// import Destinations from "./components/destinations/Destinations";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route path="/Currency" element={<CurrencyConverter />} />
         </Routes>
       </BrowserRouter>
-      <Destinations />
+      {/* <Destinations /> */}
       <Footer />
     </div>
   );

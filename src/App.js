@@ -15,7 +15,6 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/City" element={<City />} />
           <Route path="/Currency" element={<CurrencyConverter />} />
         </Routes>
       </BrowserRouter>

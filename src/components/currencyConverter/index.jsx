@@ -38,6 +38,9 @@ export default function CurrencyConverter() {
 
   return (
     <div className={styles.big_container}>
+      <div className={styles.title}>
+        <h1>Currency Converter</h1>
+      </div>
       <div className={styles.container}>
         <div className={styles.select_container}>
           <h4>From</h4>
@@ -76,8 +79,7 @@ export default function CurrencyConverter() {
           </button>
         </div>
         <div className={styles.input_container}>
-          <h4>{convertedAmount}</h4>
-          <p></p>
+          <h4 className={styles.result_container}>{convertedAmount}</h4>
         </div>
       </div>
     </div>

@@ -1,4 +1,7 @@
 # Hackathon 1
+
+Check out our website [here](https://hackathon-save.netlify.app/)!
+
 ## Team Members
 * Hendra Dharma
 * Lera Holikova
@@ -12,5 +15,4 @@
 * react-scripts
 * reactjs-popup
 
-Check out our website [here]! (https://hackathon-save.netlify.app/)
 

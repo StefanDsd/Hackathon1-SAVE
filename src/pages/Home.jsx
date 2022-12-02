@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import homeVideo from "../assets/homeVideo.mp4";
 import "./Home.css";
+
 import City from "../components/city/City";
 import Modal from "../components/city-modal";
 import { berlin, paris, amsterdam } from "../tips-data";
@@ -19,11 +20,6 @@ const Home = () => {
 
   return (
     <div className="body">
-      <div className="logoMobile">
-        <i>
-          <img src={logo2} alt="logo" />
-        </i>
-      </div>
       <section>
         <div className="home">
           <video

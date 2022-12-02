@@ -28,12 +28,12 @@ video {
 @media screen and (max-width: 940px) {
   .save-title {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5px;
-    font-size: 12px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     color: whitesmoke;
     background-color: #2f807e;
+    border-radius: 10px;
   }
   .title {
     display: flex;
@@ -85,6 +85,7 @@ video {
     }
   }
 }
+
 
 @media screen and (min-width: 940px) {
   .save-title {
@@ -178,3 +179,4 @@ video {
     padding-left: 10vh;
   }
 }
+

@@ -4,6 +4,7 @@ import BurgerMenuList from "../burgerMenuList/BurgerMenuList";
 import NavBar from "../navbar/Navbar";
 import Popup from "reactjs-popup";
 import "./Header.styles.css";
+import logo2 from "../../assets/logo2.png";
 
 const contentStyle = {
   background: "rgba(255,255,255,0)",
@@ -13,6 +14,11 @@ const contentStyle = {
 const Header = () => {
   return (
     <header>
+      <div className="logoMobile">
+        <i>
+          <img src={logo2} alt="logo" />
+        </i>
+      </div>
       <div className="navbar">
         <NavBar />
       </div>

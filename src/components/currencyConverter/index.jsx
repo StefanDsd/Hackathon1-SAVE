@@ -76,8 +76,8 @@ export default function CurrencyConverter() {
           </button>
         </div>
         <div className={styles.input_container}>
-          <h4>Result</h4>
-          <p>{convertedAmount}</p>
+          <h4>{convertedAmount}</h4>
+          <p></p>
         </div>
       </div>
     </div>

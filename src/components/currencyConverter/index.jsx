@@ -23,7 +23,7 @@ export default function CurrencyConverter() {
     fetch(symbolsUrl, requestOptions)
       .then((resp) => resp.json())
       .then((data) => setResponse(Object.keys(data.symbols)))
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, []);
 
   const handleCurrencyFetch = async () => {
@@ -37,46 +37,50 @@ export default function CurrencyConverter() {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.select_container}>
-        <h4>From</h4>
-        <select onChange={(event) => setFromCurrency(event.target.value)}>
-          <option>---</option>
-          {response.map((e, i) => (
-            <option key={i} value={e}>
-              {e}
-            </option>
-          ))}
-        </select>
+    <div className={styles.big_container}>
+      <div className={styles.title}>
+        <h1>Currency Converter</h1>
       </div>
-      <div className={styles.select_container}>
-        <h4>To</h4>
-        <select onChange={(event) => setToCurrency(event.target.value)}>
-          <option>---</option>
-          {response.map((e, i) => (
-            <option key={i} value={e}>
-              {e}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div className={styles.input_container}>
-        <h4>Amount</h4>
-        <input
-          type="number"
-          onChange={(event) => setAmount(event.target.value)}
-        />
-        <button
-          onClick={() => handleCurrencyFetch()}
-          className={styles.convert_button}
-        >
-          {" "}
-          convert{" "}
-        </button>
-      </div>
-      <div className={styles.input_container}>
-        <h4>Result</h4>
-        <p>{convertedAmount}</p>
+      <div className={styles.container}>
+        <div className={styles.select_container}>
+          <h4>From</h4>
+          <select onChange={(event) => setFromCurrency(event.target.value)}>
+            <option>---</option>
+            {response.map((e, i) => (
+              <option key={i} value={e}>
+                {e}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className={styles.select_container}>
+          <h4>To</h4>
+          <select onChange={(event) => setToCurrency(event.target.value)}>
+            <option>---</option>
+            {response.map((e, i) => (
+              <option key={i} value={e}>
+                {e}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className={styles.input_container}>
+          <h4>Amount</h4>
+          <input
+            type="number"
+            onChange={(event) => setAmount(event.target.value)}
+          />
+          <button
+            onClick={() => handleCurrencyFetch()}
+            className={styles.convert_button}
+          >
+            {" "}
+            convert{" "}
+          </button>
+        </div>
+        <div className={styles.input_container}>
+          <h4 className={styles.result_container}>{convertedAmount}</h4>
+        </div>
       </div>
     </div>
   );

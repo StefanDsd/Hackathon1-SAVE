@@ -8,7 +8,6 @@ import AboutUs from "./pages/AboutUs";
 import Footer from "./components/footer/Footer";
 import CurrencyConverter from "./components/currencyConverter";
 
-
 function App() {
   return (
     <div className="App">
@@ -21,7 +20,7 @@ function App() {
           <Route path="/Currency" element={<CurrencyConverter />} />
         </Routes>
       </BrowserRouter>
-      
+
       <Footer />
     </div>
   );

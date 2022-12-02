@@ -23,11 +23,13 @@ function Modal({ imgLink, children, city, onClick }) {
           alt="city"
           className="modal-image"
         />
-        <h3 className="modal-title">{city ? city : "City1"}</h3>
+        <div className="modal-details">
+          <h2 className="tip-title">{city}</h2>
+          <ul className="tip-content">{children}</ul>
+        </div>
         <button className="close-btn" onClick={() => setIsOpen(false)}>
           close
         </button>
-        <ModalDetails />
       </div>
     </div>
   );

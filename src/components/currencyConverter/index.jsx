@@ -72,8 +72,7 @@ export default function CurrencyConverter() {
           />
           <button
             onClick={() => handleCurrencyFetch()}
-            className={styles.convert_button}
-          >
+            className={styles.convert_button}>
             {" "}
             convert{" "}
           </button>

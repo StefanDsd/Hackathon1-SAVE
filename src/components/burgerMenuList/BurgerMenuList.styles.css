@@ -1,0 +1,35 @@
+.menu {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0px;
+}
+
+.menu ul {
+  position: relative;
+  top: 0px;
+  font-size: 24px;
+  padding: 0px;
+}
+
+.menu li {
+  list-style: outside none none;
+  margin: 10px 0px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  color: #5f5f863e;
+}
+
+.menu li a {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.menu li a:hover {
+  color: gold;
+  transition: 0.5s;
+}

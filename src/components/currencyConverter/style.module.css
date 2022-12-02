@@ -1,0 +1,36 @@
+.big_container {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #00539cff;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 2px solid #3a9a98;
+  border-radius: 1rem;
+  margin: auto 0.5rem;
+  padding: 0.5rem;
+}
+
+.select_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+

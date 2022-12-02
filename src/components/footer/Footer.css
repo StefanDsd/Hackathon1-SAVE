@@ -1,32 +1,31 @@
 .Footer {
-    background: #3A9A98;
-    padding-top: 10px;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    line-height: 2;
-  }
-  a.social {
-    padding-top: 20px;
-    margin: 0 1rem;
-    transition: transform 250ms;
-    display: inline-block;
-  }
-  a.social:hover {
-    transform: translateY(-2px);
-    color: #fff;
-  }
-  
-    a.github {
-    color: white;
-  }
-  
-  .row {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    color: white;
-    margin: 0 auto;
-    width: 80%;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-  }
-  
+  background: #3a9a98;
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  line-height: 2;
+}
+a.social {
+  padding-top: 20px;
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.social:hover {
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+a.github {
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  margin: 0 auto;
+  width: 80%;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}

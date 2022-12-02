@@ -29,12 +29,14 @@
   border-radius: 10px;
   padding: 5px 20px;
   border: none;
+  cursor: pointer;
 }
 
 .open-btn {
   background: none;
   border: none;
   color: whitesmoke;
+  cursor: pointer;
 }
 .modal img {
   width: 75%;

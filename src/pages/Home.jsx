@@ -6,6 +6,8 @@ import Modal from "../components/city-modal";
 import { berlin, paris, amsterdam } from "../tips-data";
 import logo2 from "../assets/logo2.png";
 import Berlin from "../assets/Berlin.jpg";
+import Paris from "../assets/Paris.jpg";
+import Amsterdam from "../assets/Amsterdam.jpg";
 
 const Home = () => {
   const video = useRef(null);
@@ -59,7 +61,7 @@ const Home = () => {
           citytitle={"Paris"}
           videosrc={"https://www.youtube.com/embed/oz45k8EYblk?start=10"}
           modal={
-            <Modal imgLink={Berlin} city={"Berlin"}>
+            <Modal imgLink={Paris} city={"Paris"}>
               {paris.map((e) => {
                 return (
                   <ul>
@@ -76,7 +78,7 @@ const Home = () => {
           citytitle={"Amsterdam"}
           videosrc={"https://www.youtube.com/embed/YaAwSaMYDyU?start=9"}
           modal={
-            <Modal imgLink={Berlin} city={"Berlin"}>
+            <Modal imgLink={Amsterdam} city={"Amsterdam"}>
               {amsterdam.map((e) => {
                 return (
                   <ul>
